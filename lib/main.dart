@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.orange,
         iconTheme: IconThemeData(
           color: Colors.white, //change your color here
         ),
