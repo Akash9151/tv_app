@@ -1,14 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:tv_app/Dialogs.dart';
+import 'package:tv_app/disclaimer.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tv_app/login/welcomePage.dart';
 import 'package:tv_app/Tabs/settings.dart';
-import 'package:tv_app/Tabs/Movies.dart' as Movies;
 import 'dart:async';
 import 'dart:convert';
-import 'package:tv_app/Tabs/LiveTV.dart';
 ///import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 void main() {
@@ -29,12 +27,12 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primarySwatch: Colors.blue,
         primaryTextTheme: TextTheme(
-            title: TextStyle(
+            headline4: TextStyle(
                 color: Colors.white
             ),
         ),
       ),
-      home: MyHomePage(),
+      home: WelcomePage(),
     );
   }
 }
@@ -42,7 +40,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-  Dialogs dialogs = new Dialogs();
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
   // how it looks.
@@ -133,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: new TextStyle(
                 fontSize: 15,
               )),
-              trailing: Icon(Icons.tv), onTap:() => Dialogs()
+              trailing: Icon(Icons.tv), onTap:() => MyApp()
             ),
 
             ListTile(
