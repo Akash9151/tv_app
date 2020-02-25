@@ -18,6 +18,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ![](images/Screenshot_1582610278.png)
 
-![](images/Screenshot_1582610257.png)
+![](images/Screenshot_1582613701.png)
 
-![](images/Screenshot_1582610265.png)
+![](images/Screenshot_1582613706.png)
