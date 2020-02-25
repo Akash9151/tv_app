@@ -11,7 +11,7 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.orange,
         iconTheme: IconThemeData(
           color: Colors.white, //change your color here
         ),
